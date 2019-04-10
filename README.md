@@ -33,7 +33,7 @@ Para delete
 d = User.find(1)
 d.destroy
 
-User.where(last_name: “Oliveros”).destroy (este eliminaria el primero que encuentre)
+User.find_by(last_name: “Oliveros”).destroy (este eliminaria el primero que encuentre)
 User.where(last_name: “Oliveros”).destroy_all (elimina todos los Oliveros)
 
 Crear un modelo llamado Post, con image_url comment likes y caption
